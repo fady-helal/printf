@@ -25,5 +25,6 @@ int print_37(void);
 int print_char(va_list);
 int print_string(va_list);
 int _strlen(char *s);
+int print_binary(va_list );
 
 #endif
