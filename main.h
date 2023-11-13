@@ -19,7 +19,7 @@ typedef struct format
 	int (*f)();
 } operation;
 
-int _printf(const char *format, ...);
+int MY_printf(const char *format, ...);
 int _putchar(char c);
 int print_37(void);
 int print_char(va_list);
