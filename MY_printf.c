@@ -42,11 +42,3 @@ i++;
 va_end(args);
 return (length);
 }
-
-int main(void)
-{
-
-    printf("fady %s\n","helal");
-        MY_printf("fady %s\n","helal");
-return 0;
-}
