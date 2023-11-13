@@ -45,8 +45,8 @@ again:
 
 int main(void)
 {
-	int n;
+	
     printf("fady %s\n","helal");
-    n = _printf("fady %s\n","helal");
+    _printf("fady %s\n","helal");
 	return 0;
 }
