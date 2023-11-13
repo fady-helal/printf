@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *  MY_printf - is a function that selects the correct function to print.
+ *  _printf - is a function that selects the correct function to print.
  * @format: identifier to look for.
  * Return: the length of the string.
  */
 
-int MY_printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 operation ops[] = {
 {"%c", print_char},
