@@ -12,6 +12,7 @@ operation ops[] = {
 {"%c", print_char},
 {"%s", print_string},
 {"%%", print_37}, {"%b", print_binary},
+{"%o", print_octal},
 };
 va_list args;
 int i, j;
@@ -26,7 +27,7 @@ if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 for (i = 0; format[i] != '\0'; i++)
 {
 	found = 0;
-for (j = 0; j < 4; j++)
+for (j = 0; j < 5; j++)
 {
 	if (ops[j].c[0] == format[i] && ops[j].c[1] == format[i + 1])
 	{
