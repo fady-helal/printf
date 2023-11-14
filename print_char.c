@@ -1,15 +1,14 @@
 #include "main.h"
-
-/**
- * print_char - prints a character.
- * @args: arguments.
- * Return: integer.
- */
-int print_char(va_list args)
+int print_char(va_list ap, params_t *params)
 {
-char c;
+	char pad_char = ' ';
+	unsigned int pad = 1, sum = 0, ch = va_arg(ap, int);
 
-c = va_arg(args, int);
-_putchar(c);
-return (1);
+	if (params->minus_flag)
+		sum += _putchar(ch);
+	while (pad++ < params->width)
+		sum += _putchar(pad_char);
+	if (!params->minus_flag)
+		sum += _putchar(ch);
+	return (sum);
 }

@@ -1,30 +1,13 @@
 #include"main.h"
+int print_binary(va_list ap, params_t *params)
+{
+	unsigned int n = va_arg(ap, unsigned int);
+	char *str = convert(n, 2, CONVERT_UNSIGNED, params);
+	int c = 0;
 
-/**
- * print_octal - prints an octal number.
- * @args: arguments.
- * Return: count.
- */
-int print_octal(va_list args)
-{
-int i, j;
-int octal[32];
-unsigned int decimal = va_arg(args, int);
-int count = 0;
-for (i = 0 ; decimal > 0 ; i++, count++)
-{
-octal[i] = decimal % 8;
-decimal = decimal / 8;
+	if (params->hashtag_flag && n)
+		*--str = '0';
+	params->unsign = 1;
+	return (c += print_number(str, params));
 }
-for(j = i - 1 ; j >= 0 ; j--)
-{
-    _putchar(octal[j] + '0');
-}
-if (count == 0)
-{
-    count++;
-    _putchar('0');
-}
-return(count);
 
-}
