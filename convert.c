@@ -1,5 +1,5 @@
 #include "main.h"
-char *convert(long int num, int base, int flags, params_t *params)
+char *convert(long int num, int base, int flags, paramst *params)
 {
 	static char *array;
 	static char buffer[50];

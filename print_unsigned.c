@@ -1,14 +1,14 @@
 #include "main.h"
-int print_unsigned(va_list ap, params_t *params)
+int print_unsigned(va_list ap, paramst *params)
 {
 	unsigned long l;
 
-	if (params->l_modifier)
+	if (params->b_modifier)
 		l = (unsigned long)va_arg(ap, unsigned long);
-	else if (params->h_modifier)
+	else if (params->a_modifier)
 		l = (unsigned short int)va_arg(ap, unsigned int);
 	else
 		l = (unsigned int)va_arg(ap, unsigned int);
-	params->unsign = 1;
+	params->unsignn = 1;
 	return (print_number(convert(l, 10, CONVERT_UNSIGNED, params), params));
 }

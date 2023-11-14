@@ -1,11 +1,4 @@
 #include "main.h"
-
-/**
- *  * _strlen - finds the lenght of a string.
- *   * @s: string
- *    * Return: integer.
- */
-
 int _strlen(char *s)
 {
 int c;

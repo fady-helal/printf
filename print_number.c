@@ -1,8 +1,8 @@
 #include "main.h"
-int print_number(char *str, params_t *params)
+int print_number(char *str, paramst *params)
 {
 	unsigned int i = _strlen(str);
-	int neg = (!params->unsign && *str == '-');
+	int neg = (!params->unsignn && *str == '-');
 
 	if (!params->precision && *str == '0' && !str[1])
 		str = "";
@@ -17,8 +17,8 @@ int print_number(char *str, params_t *params)
 	if (neg)
 		*--str = '-';
 
-	if (!params->minus_flag)
-		return (print_number_right_shift(str, params));
+	if (!params->m_flag)
+		return (print_num_right_shift(str, params));
 	else
-		return (print_number_left_shift(str, params));
+		return (print_num_left_shift(str, params));
 }

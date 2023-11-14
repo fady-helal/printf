@@ -1,5 +1,5 @@
 #include "main.h"
-int print_address(va_list ap, params_t *params)
+int print_address(va_list ap, paramst *params)
 {
 	unsigned long int n = va_arg(ap, unsigned long int);
 	char *str;

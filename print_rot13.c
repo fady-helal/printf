@@ -1,5 +1,5 @@
 #include "main.h"
-int print_rot13(va_list ap, params_t *params)
+int print_rot13(va_list ap, paramst *params)
 {
 	int i, index;
 	int count = 0;

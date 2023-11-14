@@ -1,5 +1,5 @@
 #include "main.h"
-char *get_width(char *s, params_t *params, va_list ap)
+char *get_width(char *s, paramst *params, va_list ap)
 {
 	int d = 0;
 
