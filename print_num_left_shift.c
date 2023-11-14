@@ -1,3 +1,4 @@
+#include "main.h"
 int print_num_left_shift(char *str, params_t *params)
 {
 	unsigned int n = 0, neg, neg2, i = _strlen(str);

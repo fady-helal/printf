@@ -1,3 +1,4 @@
+#include "main.h"
 int print_number(char *str, params_t *params)
 {
 	unsigned int i = _strlen(str);
