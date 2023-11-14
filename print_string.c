@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
- *  * print_string - print a string.
- *   * @args: argument.
- *    * Return: the length of the string.
- */
-
 int print_string(va_list args)
 {
 char *s;
