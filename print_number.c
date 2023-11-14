@@ -18,7 +18,7 @@ int print_number(char *str, params_t *params)
 		*--str = '-';
 
 	if (!params->minus_flag)
-		return (print_num_right_shift(str, params));
+		return (print_number_right_shift(str, params));
 	else
-		return (print_num_left_shift(str, params));
+		return (print_number_left_shift(str, params));
 }
