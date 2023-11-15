@@ -1,5 +1,5 @@
 #include "main.h"
-int print_rev(va_list ap, paramst *params)
+int print_revo(va_list ap, paramst *params)
 {
 	int len, sum = 0;
 	char *str = va_arg(ap, char *);
